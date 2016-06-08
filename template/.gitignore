@@ -1,0 +1,22 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+selenium-debug.log
+test/unit/coverage
+test/e2e/reports
+npm_modules
+bower_components
+trash
+Error.log
+
+.sass-cache
+.tmp
+.rvmrc
+.trashes
+*~
+
+# IDE Stuff
+.idea/
+*.sublime-project
+*.sublime-workspace

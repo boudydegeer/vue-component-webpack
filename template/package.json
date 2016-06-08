@@ -1,0 +1,53 @@
+{
+  "name": "{{ name }}",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  {{#private}}
+  "private": true,
+  {{/private}}
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot",
+    "dev-port": "webpack-dev-server --inline --hot --port ",
+    "test": "karma start test/karma.conf.js --single-run",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "engines" : {
+    "node" : "6.x"
+  },
+  "dependencies": {
+    "vue": "^1.0.0",
+    "babel-runtime": "^6.0.0"
+  },
+  "devDependencies": {
+     "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-2": "^6.0.0",
+    "chai": "^3.5.0",
+    "cross-env": "^1.0.6",
+    "css-loader": "^0.23.0",
+    "eslint": "^2.11.1",
+    "eslint-friendly-formatter": "^2.0.5",
+    "file-loader": "^0.8.4",
+    "json-loader": "^0.5.4",
+    "karma": "^0.13.22",
+    "karma-mocha": "^1.0.1",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sinon-chai": "^1.2.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.5.3",
+    "phantomjs-prebuilt": "^2.1.7",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0",
+    "url-loader": "^0.5.7",
+    "vue-hot-reload-api": "^1.2.0",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^8.2.1",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  }
+}
